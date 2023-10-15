@@ -11,6 +11,7 @@ import image_7 from "../../public/image_7.png"
 import image_8 from "../../public/image_8.png"
 import image_9 from "../../public/image_9.png"
 import image_10 from "../../public/image_10.png"
+import image_11 from "../../public/image_11.png"
 import logo from "../../public/logo.png"
 import { useEffect, useRef, useState } from 'react'
 import NavMenu from '@/components/nav-menu'
@@ -143,6 +144,27 @@ export default function Home() {
             </figure>
           </div>
 
+        </section>
+
+        <section className='w-full min-h-screen text-center md:text-left flex flex-col gap-6 p-6 md:px-24 justify-center items-center md:flex-row md:justify-between'>
+
+          <figure className='w-fit md:flex-1 flex aspect-square justify-center items-center' >
+            <Image src={image_11} className='w-full max-w-[100px] md:max-w-none' alt="Imagem gerada por IA" />
+          </figure>
+
+          <div className='md:flex-1 flex-col items-center justify-center'>
+            <h1 className='py-1 leading-normal text-5xl md:text-7xl font-bold'>
+              <span>
+                Melhore ou crie seus próprios
+              </span>
+              <span className='ml-5 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text'>
+                datasets
+              </span>
+            </h1>
+            <p className='leading-relaxed mt-6 text-3xl font-bold text-[#fefefe] bg-clip-text bg-300%'>
+              Encontre datasets para treinar seus modelos de ML, realize o balanceamento de seus dados ou encomende bancos de imagens personalizados.
+            </p>
+          </div>
         </section>
 
       </main>
