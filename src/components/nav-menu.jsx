@@ -12,22 +12,17 @@ export default function NavMenu({ setService }) {
     const menuItems = [
         {
             key: 1,
-            anchor: "#",
+            anchor: "#proposal",
             item: "Proposta",
         },
         {
             key: 2,
-            anchor: "#",
+            anchor: "#products",
             item: "Produtos",
         },
         {
             key: 3,
-            anchor: "#",
-            item: "Sobre",
-        },
-        {
-            key: 4,
-            anchor: "#",
+            anchor: "#contact",
             item: "Contato",
         }
     ]
@@ -69,6 +64,8 @@ export default function NavMenu({ setService }) {
                             <li className="py-1 w-full" key={key} >
                                 <a href={anchor} onClick={e => {
                                     e.preventDefault();
+
+                                    document.querySelector(anchor).scrollIntoView();
                                 }}
                                     className={`w-full px-1.5 py-1 block brightness-75 hover:brightness-100 transition-all text-xl font-bold ${idx < menuItems.length - 1 && 'border-b-white border-b-2'} md:border-b-0`}>
                                     {item}
