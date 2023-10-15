@@ -12,7 +12,7 @@ import image_8 from "../../public/image_8.png"
 import image_9 from "../../public/image_9.png"
 import image_10 from "../../public/image_10.png"
 import image_11 from "../../public/image_11.png"
-import github from "../../public/github.png"
+import github from "../../public/github.svg"
 import logo from "../../public/logo.png"
 import { useEffect, useRef, useState } from 'react'
 import NavMenu from '@/components/nav-menu'
@@ -35,11 +35,12 @@ export default function Home() {
       scroll > 200 ? setPageScroll(true) : setPageScroll(false);
 
       const containerHeight = containerRef.current.offsetHeight;
+      const containerWidth = containerRef.current.offsetWidth;
 
-      circleRef.current.style.right = (scroll / containerHeight) * 100 - 96 + "px";
-      circle2Ref.current.style.left = (scroll / containerHeight) * 100 - 96 + "px";
-      circle2Ref.current.style.top = (scroll / containerHeight) * 100 - 96 + "px";
-      gridRef.current.style.left = (scroll / containerHeight) * 100 + 48 + "px";
+      circleRef.current.style.right = (scroll / containerHeight) * containerWidth - 96 + "px";
+      circle2Ref.current.style.left = (scroll / containerHeight) * containerWidth - 96 + "px";
+      circle2Ref.current.style.top = (scroll / containerHeight) * 1000 - 96 + "px";
+      gridRef.current.style.left = (scroll / containerHeight) * containerWidth + 48 + "px";
 
     });
 
@@ -77,7 +78,7 @@ export default function Home() {
       }
 
 
-      <main className="w-full flex-1 flex flex-col">
+      <main className="w-full flex-1 flex flex-col scroll-">
 
         <section id='intro' className='w-full min-h-screen text-center md:text-left flex flex-col gap-6 p-6 md:px-24 justify-center items-center md:flex-row md:justify-between'>
           <div className='md:flex-1 flex-col items-center justify-center'>
