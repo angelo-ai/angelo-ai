@@ -117,7 +117,7 @@ export default function Home() {
 
         <section id='proposal' className='w-full min-h-screen text-center md:text-left flex flex-col gap-6 p-6 md:px-24 justify-center items-center md:flex-row md:justify-between'>
 
-          <div className='md:flex-1 flex-col items-center justify-center'>
+          <div className='md:max-w-3xl md:flex-1 flex-col items-center justify-center'>
             <h1 className='py-1 leading-normal text-5xl md:text-7xl font-bold'>
 
               <span>
@@ -127,7 +127,7 @@ export default function Home() {
                 IA
               </span>
             </h1>
-            <p className='leading-relaxed mt-6 text-3xl font-bold text-[#fefefe] bg-clip-text bg-300%'>
+            <p className='leading-relaxed mt-6 text-3xl font-bold text-[#fefefe]'>
               Utilizamos técnicas de
               inteligência artificial
               para criar, editar e melhorar
