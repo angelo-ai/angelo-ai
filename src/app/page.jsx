@@ -7,6 +7,10 @@ import image_3 from "../../public/image_3.png"
 import image_4 from "../../public/image_4.png"
 import image_5 from "../../public/image_5.png"
 import image_6 from "../../public/image_6.png"
+import image_7 from "../../public/image_7.png"
+import image_8 from "../../public/image_8.png"
+import image_9 from "../../public/image_9.png"
+import image_10 from "../../public/image_10.png"
 import logo from "../../public/logo.png"
 import { useEffect, useRef, useState } from 'react'
 import NavMenu from '@/components/nav-menu'
@@ -28,7 +32,7 @@ export default function Home() {
 
       const containerHeight = containerRef.current.offsetHeight;
 
-      circleRef.current.style.right = (scroll/containerHeight)*100 - 96 + "px";
+      circleRef.current.style.right = (scroll / containerHeight) * 100 - 96 + "px";
 
     });
 
@@ -59,7 +63,7 @@ export default function Home() {
       {
         pageScroll &&
         <header className='w-full h-fit bg-[#fefefe]/10 backdrop-blur fixed animate-appear flex justify-between items-center p-6' ref={headerRef}>
-          <Image src={logo} className='w-full max-w-[150px] md:max-w-[200px]'/>
+          <Image src={logo} className='w-full max-w-[150px] md:max-w-[200px]' />
 
           <NavMenu></NavMenu>
         </header>
@@ -70,34 +74,34 @@ export default function Home() {
 
         <section className='w-full min-h-screen text-center md:text-left flex flex-col gap-6 p-6 md:px-24 justify-center items-center md:flex-row md:justify-between'>
           <div className='md:flex-1 flex-col items-center justify-center'>
-            <h1 className=' bock py-1 leading-normal text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 text-transparent bg-clip-text animate-gradient bg-300%'>
+            <h1 className=' py-1 leading-normal text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 text-transparent bg-clip-text animate-gradient bg-300%'>
               Angelo
             </h1>
-            <p className=' bock leading-relaxed mt-6 text-3xl font-bold text-[#fefefe] bg-clip-text bg-300%'>
+            <p className=' leading-relaxed mt-6 text-3xl font-bold text-[#fefefe] bg-clip-text bg-300%'>
               Crie, edite, transforme e
               <br />
               melhore.
             </p>
           </div>
 
-          <div className='md:flex-1 w-fit md:w-full grid grid-rows-3 grid-cols-2 gap-6 md:grid-cols-3'>
+          <div className='w-fit grid grid-rows-3 grid-cols-2 gap-6 md:grid-cols-3'>
 
-            <figure className='w-full flex aspect-square justify-center items-center md:col-start-1 md:row-start-2' >
+            <figure className='w-fit flex aspect-square justify-center items-center md:col-start-1 md:row-start-2' >
               <Image src={image_1} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
             </figure>
-            <figure className='w-full flex aspect-square justify-center items-center md:col-start-3 md:row-start-1' >
+            <figure className='w-fit flex aspect-square justify-center items-center md:col-start-3 md:row-start-1' >
               <Image src={image_2} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
             </figure>
-            <figure className='w-full flex aspect-square justify-center items-center md:col-start-2 md:row-start-1' >
+            <figure className='w-fit flex aspect-square justify-center items-center md:col-start-2 md:row-start-1' >
               <Image src={image_3} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
             </figure>
-            <figure className='w-full flex aspect-square justify-center items-center md:col-start-3 md:row-start-3' >
+            <figure className='w-fit flex aspect-square justify-center items-center md:col-start-3 md:row-start-3' >
               <Image src={image_4} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
             </figure>
-            <figure className='w-full flex aspect-square justify-center items-center md:col-start-2 md:row-start-2' >
+            <figure className='w-fit flex aspect-square justify-center items-center md:col-start-2 md:row-start-2' >
               <Image src={image_5} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
             </figure>
-            <figure className='w-full flex aspect-square justify-center items-center md:col-start-3 md:row-start-2' >
+            <figure className='w-fit flex aspect-square justify-center items-center md:col-start-3 md:row-start-2' >
               <Image src={image_6} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
             </figure>
 
@@ -105,6 +109,39 @@ export default function Home() {
         </section>
 
         <section className='w-full min-h-screen text-center md:text-left flex flex-col gap-6 p-6 md:px-24 justify-center items-center md:flex-row md:justify-between'>
+
+          <div className='md:flex-1 flex-col items-center justify-center'>
+            <h1 className='py-1 leading-normal text-5xl md:text-7xl font-bold'>
+
+              <span>
+                Conheça o poder da
+              </span>
+              <span className='ml-5 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text'>
+                IA
+              </span>
+            </h1>
+            <p className='leading-relaxed mt-6 text-3xl font-bold text-[#fefefe] bg-clip-text bg-300%'>
+              Utilizamos técnicas de
+              inteligência artificial
+              para criar, editar e melhorar
+              a resolução de imagens.
+            </p>
+          </div>
+
+          <div className=' w-fit grid grid-rows-2 grid-cols-2 gap-6'>
+            <figure className='w-fit flex aspect-square justify-center items-center' >
+              <Image src={image_10} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
+            </figure>
+            <figure className='w-fit flex aspect-square justify-center items-center' >
+              <Image src={image_9} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
+            </figure>
+            <figure className='w-fit flex aspect-square justify-center items-center' >
+              <Image src={image_8} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
+            </figure>
+            <figure className='w-fit flex aspect-square justify-center items-center' >
+              <Image src={image_7} className='w-full max-w-[100px] md:max-w-[200px]' alt="Imagem gerada por IA" />
+            </figure>
+          </div>
 
         </section>
 
