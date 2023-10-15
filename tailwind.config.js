@@ -38,6 +38,10 @@ module.exports = {
         appear:{
           from: {opacity: '0'},
           to: {opacity: '100%'},
+        },
+        slideup: {
+          from: {transform: 'translateY(20px)'},
+          to: {transform: 'translateY(0)'}
         }
       },
       backgroundSize: {
@@ -47,7 +51,8 @@ module.exports = {
         gradient: 'animatedgradient 6s ease infinite alternate',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        appear: 'appear .2s ease'
+        appear: 'appear .2s ease',
+        slideup: 'slideup .2s ease'
       },
     },
   },

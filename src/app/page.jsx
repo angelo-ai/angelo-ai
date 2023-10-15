@@ -7,7 +7,9 @@ import image_3 from "../../public/image_3.png"
 import image_4 from "../../public/image_4.png"
 import image_5 from "../../public/image_5.png"
 import image_6 from "../../public/image_6.png"
+import logo from "../../public/logo.png"
 import { useEffect, useRef, useState } from 'react'
+import NavMenu from '@/components/nav-menu'
 
 export default function Home() {
 
@@ -35,7 +37,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className='w-full min-h-screen flex flex-col justify-between items-center relative font-inter' ref={containerRef}>
+    <div className='w-full min-h-screen flex flex-col justify-between items-center relative font-inter overflow-hidden' ref={containerRef}>
 
 
       <div id="background" className='h-screen w-screen absolute opacity-50 -z-10'>
@@ -56,8 +58,10 @@ export default function Home() {
 
       {
         pageScroll &&
-        <header className='w-full h-36 bg-[#fefefe]/10 backdrop-blur fixed animate-appear' ref={headerRef}>
+        <header className='w-full h-fit bg-[#fefefe]/10 backdrop-blur fixed animate-appear flex justify-between items-center p-6' ref={headerRef}>
+          <Image src={logo} className='w-full max-w-[150px] md:max-w-[200px]'/>
 
+          <NavMenu></NavMenu>
         </header>
       }
 
@@ -66,7 +70,7 @@ export default function Home() {
 
         <section className='w-full min-h-screen text-center md:text-left flex flex-col gap-6 p-6 md:px-24 justify-center items-center md:flex-row md:justify-between'>
           <div className='md:flex-1 flex-col items-center justify-center'>
-            <h1 className=' bock py-1 leading-normal text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-transparent bg-clip-text animate-gradient bg-300%'>
+            <h1 className=' bock py-1 leading-normal text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 text-transparent bg-clip-text animate-gradient bg-300%'>
               Angelo
             </h1>
             <p className=' bock leading-relaxed mt-6 text-3xl font-bold text-[#fefefe] bg-clip-text bg-300%'>
