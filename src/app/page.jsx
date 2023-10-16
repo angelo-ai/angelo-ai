@@ -85,10 +85,8 @@ export default function Home() {
             <h1 className=' py-1 leading-normal text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 text-transparent bg-clip-text animate-gradient bg-300%'>
               Angelo
             </h1>
-            <p className=' leading-relaxed mt-6 text-3xl font-bold text-[#fefefe] bg-clip-text bg-300%'>
-              Crie, edite, transforme e
-              <br />
-              melhore.
+            <p className=' leading-relaxed mt-6 text-3xl md:text-4xl font-bold'>
+              Crie, edite, transforme e melhore.
             </p>
           </div>
 
