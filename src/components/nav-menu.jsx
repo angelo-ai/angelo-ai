@@ -65,7 +65,7 @@ export default function NavMenu({ setService }) {
                                 <a href={anchor} onClick={e => {
                                     e.preventDefault();
 
-                                    document.querySelector(anchor).scrollIntoView();
+                                    document.querySelector(anchor).scrollIntoView({ behavior: "smooth" });
                                 }}
                                     className={`w-full px-1.5 py-1 block brightness-75 hover:brightness-100 transition-all text-xl font-bold ${idx < menuItems.length - 1 && 'border-b-white border-b-2'} md:border-b-0`}>
                                     {item}

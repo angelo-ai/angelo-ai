@@ -78,7 +78,7 @@ export default function Home() {
       }
 
 
-      <main className="w-full flex-1 flex flex-col scroll-">
+      <main className="w-full flex-1 flex flex-col ">
 
         <section id='intro' className='w-full min-h-screen text-center md:text-left flex flex-col gap-6 p-6 md:px-24 justify-center items-center md:flex-row md:justify-between'>
           <div className='md:flex-1 flex-col items-center justify-center'>
