@@ -1,19 +1,19 @@
 'use client'
 import Image from 'next/image'
 
-import image_1 from "../../public/image_1.png"
-import image_2 from "../../public/image_2.png"
-import image_3 from "../../public/image_3.png"
-import image_4 from "../../public/image_4.png"
-import image_5 from "../../public/image_5.png"
-import image_6 from "../../public/image_6.png"
-import image_7 from "../../public/image_7.png"
-import image_8 from "../../public/image_8.png"
-import image_9 from "../../public/image_9.png"
-import image_10 from "../../public/image_10.png"
-import image_11 from "../../public/image_11.png"
+import image_1 from "../../public/image_1.webp"
+import image_2 from "../../public/image_2.webp"
+import image_3 from "../../public/image_3.webp"
+import image_4 from "../../public/image_4.webp"
+import image_5 from "../../public/image_5.webp"
+import image_6 from "../../public/image_6.webp"
+import image_7 from "../../public/image_7.webp"
+import image_8 from "../../public/image_8.webp"
+import image_9 from "../../public/image_9.webp"
+import image_10 from "../../public/image_10.webp"
+import image_11 from "../../public/image_11.webp"
 import github from "../../public/github.svg"
-import logo from "../../public/logo.png"
+import logo from "../../public/logo.webp"
 import { useEffect, useRef, useState } from 'react'
 import NavMenu from '@/components/nav-menu'
 
