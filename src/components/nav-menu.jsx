@@ -58,7 +58,7 @@ export default function NavMenu({ setService }) {
 
             {
                 menuState &&
-                <ul ref={menuRef} className="bg-black/80 md:bg-transparent mt-4 ring-white ring-1 px-4 py-3 backdrop-blur md:backdrop-blur-none rounded-md absolute right-0 animate-slideup md:flex md:relative md:gap-5 md:ring-0 md:ring-transparent md:flex-row">
+                <ul ref={menuRef} className="bg-black/80 md:bg-transparent mt-4 ring-white ring-1 px-4 py-3 rounded-md absolute right-0 animate-slideup md:flex md:relative md:gap-5 md:ring-0 md:ring-transparent md:flex-row">
                     {
                         menuItems.map(({ key, anchor, item }, idx) =>
                             <li className="py-1 w-full" key={key} >
